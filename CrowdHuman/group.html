@@ -1,4 +1,77 @@
 
 
-{% set active_page = "group" %}
-{% extends "layout.html" %}
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head> 
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+        <link rel = "stylesheet" type = "text/css" href = "static/css/layout.css">
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-lg sticky-top" role = "navigation" style = "background-color: rgba(221,221,221,1)"> 
+            <div class = "container-fluid">
+                <div class = "navbar-header" style = "position: absolute">
+                    <a class = "navbar-brand" href = "#"><img src = "static/glyphicons/logo.png" alt = "logo">  </a>
+                </div>
+                <div class = " mx-auto " style = "font-size: 2rem; font-weight: bold">
+                    <!-- add conponents here, such as ul(nav navbar-nav dropdown), text, form  --> 
+                    <!-- TODO how to apply active, so the background-color of nav will change -->
+                    <ul class = "navbar-nav mr-auto">
+                        <li class = "nav-item "> 
+                            <a class = "nav-link" href = "index.html"> 
+                                <img src = "static/glyphicons/glyphicons-home.png"> Overview 
+                            </a> 
+                        </li>
+
+                        <li class = "nav-item " style = "margin-left: 1rem;"> 
+                            <a class = "nav-link" href = "explore.html">
+                                <img src = "static/glyphicons/glyphicons-tree-deciduous.png">  Explore 
+                            </a> 
+                        </li>
+
+                        <li class = "nav-item" style = "margin-left: 1rem;"> 
+                            <a class = "nav-link" href = "challenge.html">
+                                <img src = "static/glyphicons/glyphicons-tree-deciduous.png">  Challenge 
+                            </a> 
+                        </li>
+                        <li class = "nav-item" style = "margin-left: 1rem;">  
+                            <a class = "nav-link" href = "download.html"> 
+                                <img src = "static/glyphicons/glyphicons-download-alt.png">  Download 
+                            </a>
+                        </li> 
+                        <li class = "nav-item active" style = "margin-left: 1rem;">
+                            <a class = "nav-link" href = "group.html"> 
+                                <img src = "static/glyphicons/glyphicons-group.png"> Group 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+        
+
+        <footer class = "pt-3 mt-4 fixed-bottom">
+            <div class = "container text-center">
+                add footer content
+            </div>  
+            <hr>
+            <div class = "footer-copyright py-3 text-center">
+                @ 2018 Copyright: <a href = "#" class = "text-white"> add own website </a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
+
+
+
