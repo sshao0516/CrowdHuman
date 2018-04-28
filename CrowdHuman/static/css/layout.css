@@ -1,0 +1,26 @@
+
+
+
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link {
+    color: rgba(0,0,0,0.8);
+}
+
+.navbar-nav .active {
+    background-color: rgba(200,200,200, 1)
+}
+
+.navbar-nav li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+footer {
+    background-color: rgba(221,221,221,1);
+    color: rgba(0,0,0,0.8)
+}
