@@ -18,7 +18,7 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md"]
 baseurl:
 
 # the base hostname & protocol for your site
-url: "http://sshao0516.github.io/dev/"
+url: "https://sshao0516.github.io/dev/"
 
 ####################################
 ######   Optional Features    ######
@@ -29,7 +29,7 @@ smooth-scroll: false
 ###########   Plugins    ###########
 ####################################
 plugins:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
+#  - jekyll-archives # Sorry, not GitHub pages friendly!
 
 jekyll-archives:
   enabled:
