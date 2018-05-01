@@ -1,0 +1,850 @@
+<!DOCTYPE html >
+<html lang="en-US">
+
+  <!-- Site Head -->
+<head>
+  <meta charset="utf-8" />
+  <title>CrowdHuman Dataset</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/images/favicon.png" title="Favicon" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+  <!-- Importing Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+  <body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader"><span class="load-icon"></span></div>
+
+    <!-- Site Header -->
+<header class="site-header parallax" id="home" data-scrollax-parent="true">
+
+  <!-- Parallax Header Image -->
+  <div class="parallax-wrapper">
+    <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
+      <img src="/images/header-image.jpg" alt="Sera - One Page Template by Gleesik Wallpaper" />
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Site Navigation Bar -->
+    <div class="row site-navigation-bar parent">
+
+      <!-- Logo -->
+      <div class="col-sm-2 col-xs-4 logo child-center-v">
+        <a href="/index.html"><img src="/images/logo.png" width="100" alt="Megvii Inc. (Face++)"></a>
+      </div>
+
+      <!-- Toggle Mobile Menu -->
+      <div class="col-xs-8 toggle-menu child-center-v">
+
+        <!-- Burger -->
+        <div class="navTrigger">
+          <i></i><i></i><i></i>
+        </div>
+
+      </div>
+
+      <!-- Navigation Bar -->
+      <div class="col-sm-10 col-xs-12 navigation-bar child-center-v">
+
+        <!-- Navigation Menu -->
+        <nav id="navMenu" class="nav-menu">
+          <ul class="menu">
+            <li class="current-menu-item"><a href="#home">Home</a></li>
+            <li><a href="#about">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#portfolio">Explore</a></li>
+            <li><a href="#testimonials">Challenge</a></li>
+            <li><a href="#blog">Download</a></li>
+            <li><a href="#blog">License</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+    </div>
+
+    <!-- Site Header Banner -->
+    <div class="row header-banner parent" data-scrollax="properties: { 'translateY': '48%', 'opacity': '1.4' }">
+
+      <div class="heading-content text-center child-center-v">
+
+        <!-- Heading Title -->
+        <div class="row heading-title">
+          <h2>CrowdHuman</h2>
+          <hr class="small">
+          <h1 class="thin">A Benchmark for Detecting Human in a Crowd</h1>
+        </div>
+
+        <!-- Header Buttons
+        <div class="row buttons-header">
+          <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1"><a href="" class="button-cta button-focus"></a></div>
+          <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-push-2 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1"><a href="" class="button-cta"></a></div>
+        </div>
+
+      </div>
+      -->
+
+    </div>
+
+    <!-- Arrow Down -->
+    <div class="row arrow-down-section" data-scrollax="properties: { 'opacity': '0.6' }">
+
+        <div class="wrapper-arrow child-center">
+          <a href="#about" class="arrow-down">
+            <i class="pe-7s-angle-down"></i>
+          </a>
+        </div>
+
+    </div>
+
+  </div>
+</header>
+
+
+    <!-- About Section -->
+<section class="site-section about-section next-section-indicator" id="about">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Overview</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>CrowdHuman is a benchmark dataset to better evaluate detectors in crowd scenarios. The CrowdHuman dataset is large, rich-annotated and contains high diversity. CrowdHuman contains 15000, 4370 and 5000 images for training, validation, and testing, respectively. There are a total of 470K human instances(339565 unique) from train and validation subsets and 23 persons per image, with various kinds of occlusions in the dataset. Each human instance is annotated with a head bounding-box, human visible-region bounding-box and human full-body bounding-box. We hope our dataset will serve as a solid baseline and help promote future research in human detection tasks.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="site-section section-focus features-section" id="features">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Features</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>For details on the CrowdHuman dataset please refer to the paper.</p>
+      </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="row features">
+
+      
+
+      <div class="col-md-4 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 feature">
+        <div class="icon parent">
+          <div class="circle parent">
+            <div class="circle child-center">
+              <i class="pe-7s-vector child-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <h3>More Crowded</h3>
+          <p>More Corwded</p>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 feature">
+        <div class="icon parent">
+          <div class="circle parent">
+            <div class="circle child-center">
+              <i class="pe-7s-help2 child-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <h3>Three Box</h3>
+          <p>Three Box</p>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 feature">
+        <div class="icon parent">
+          <div class="circle parent">
+            <div class="circle child-center">
+              <i class="pe-7s-airplay child-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <h3>Bigger</h3>
+          <p>Bigger</p>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section class="site-section portfolio-section next-section-indicator" id="portfolio">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Explore</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>examples</p>
+      </div>
+
+    </div>
+
+    <!-- Filter Menu -->
+    <div class="row filter-menu-wrapper">
+      <div class="col-md-8 col-md-push-2">
+        <div class="filter-menu">
+          <ul>
+            <li data-filter="all" class="current">All</li>
+
+            
+              <li data-filter=".websites" >Websites</li>
+            
+              <li data-filter=".logo" >Logo</li>
+            
+              <li data-filter=".graphic-design" >Graphic Design</li>
+            
+              <li data-filter=".development" >Development</li>
+            
+              <li data-filter=".video" >Video</li>
+            
+              <li data-filter=".photography" >Photography</li>
+            
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="row portfolio-grid">
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  websites graphic-design">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-01.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Websites</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-01.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  graphic-design logo websites">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-02.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Graphic Design</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-02.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  graphic-design logo photography">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-03.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Graphic Design</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-03.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  websites video photography">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-04.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Websites</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-04.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  development logo">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-05.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Development</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-05.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  development video">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-06.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Development</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-06.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  websites graphic-design">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-07.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Websites</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-07.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  websites video">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-08.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Websites</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-08.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-4 col-sm-6 item visible  photography logo">
+        <figure class="img-wrap">
+          <img src="/images/portfolio/img-09.jpg" alt="Portfolio Item Image" />
+        </figure>
+        <div class="item-content">
+          <h3>S<span class="thin">era</span> Style</h3>
+          <h4>Photography</h4>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="item-link"><i class="pe-7s-link"></i></a></li>
+              <li><a href="#" class="item-like"><i class="pe-7s-like"></i></a></li>
+              <li><a href="/images/portfolio/img-09.jpg" class="item-expand"><i class="pe-7s-exapnd2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Overlay Lightbox -->
+      <div id="overlay" class="overlay"></div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Parallax Section -->
+<section class="site-section parallax-features-section parallax" id="parallax-features" data-scrollax-parent="true">
+
+  <!-- Parallax Image -->
+  <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
+    <img src="/images/features-parallax.jpg" alt="Parallax Features" />
+  </div>
+
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Challenge</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>Opening in the future...</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="site-section about-section next-section-indicator" id="about">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Download</h2>
+        <hr class="normal">
+      </header>
+
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+            <p>CrowdHuman_train01.zip
+                <a href="https://pan.baidu.com/s/1e-61WDiCqQibBVTIWqrssQ">[Baidu Drive]</a> 
+                <a href="https://drive.google.com/open?id=1XZm5L27eQasrvMq008l6vW8I8ysnavSM">[Google Drive]</a>
+            </p>
+            <p>CrowdHuman_train02.zip
+                <a href="https://pan.baidu.com/s/1OnndpWXiZxsCB3VtWEYE3w">[Baidu Drive]</a>
+                <a href="https://drive.google.com/open?id=1KgreKkhPfIiZHkl-x5K7p5LHKsfZss5q">[Google Drive]</a>
+            </p>
+            <p>CrowdHuman_train03.zip 
+                <a href="https://pan.baidu.com/s/1kkfOlHV_xXKNbJUlLSkyXA">[Baidu Drive]</a>
+                <a href="https://drive.google.com/open?id=1Af1rBvQSxOmXphoNNtKzAJyrEeeAF-aV">[Google Drive]</a>
+            </p>
+            <p>CrowdHuman_val.zip
+                <a href="https://pan.baidu.com/s/1kVBchjxOWu9sM5h8OAxfQw">[Baidu Drive]</a>
+                <a href="https://drive.google.com/open?id=1dRRL6eKE1v_1Kb_R8nZGhTQ0HzYZ-Pss">[Google Drive]</a>
+            </p>
+            <p>annotation_train.odgt
+                <del>
+                <a href="https://www.megvii.com">[Baidu Dirve]</a>
+                <a href="https://www.megvii.com">[Google Drive]</a>
+                </del>
+            </p>
+            <p>annotation_val.odgt
+                <del>
+                <a href="https://www.megvii.com">[Baidu Drive]</a>
+                <a href="https://www.megvii.com">[Google Drive]</a>
+                </del>
+            </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="site-section section-focus features-section" id="features">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>License</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p></p>
+      </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="row features">
+
+      <div class="col-md-6 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 license">
+        <div class="content text-center">
+          <h3>Please cite the following paper if you use our dataset.</h3>
+          <br>
+          <code> Waiting for the publication of the paper... </code>
+        </div>
+      </div>
+      <div class="col-md-6 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 license">
+        <div class="content text-left">
+          <h3>Terms of use: by downloading the image data you agree to the following terms:</h3>
+          <br><code>1. You will use the data only for non-commercial research and educational purposes.</code>
+          <br><code>2. You will NOT distribute the above images.</code>
+          <br><code>3. Megvii Inc. (Face++) makes no representations or warranties regarding the data, including but not limited to warranties of non-infringement or fitness for a particular purpose.</code>
+          <br><code>4. You accept full responsibility for your use of the data and shall defend and indemnify Massachusetts Institute of Technology, including its employees, officers and agents, against any and all claims arising from your use of the data, including but not limited to your use of any copies of copyrighted images that you may create from the data.</code>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Offer Section -->
+<section class="offer-section">
+  <div class="container">
+
+    <div class="col-md-9 col-sm-12">
+      <h2>Face++, A new chance!</h2>
+    </div>
+    <div class="col-md-3 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1">
+      <a href="" target="_blank" class="button-cta button-block">Join Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Team Section -->
+<section class="site-section team-section section-focus" id="team">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>Meet Our Team</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>Detection team of Megvii Research.</p>
+      </div>
+
+    </div>
+
+    <!-- Team Members -->
+    <div class="row team-members-container">
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/avatar-01.jpg" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Shuai Shao</h3>
+            <h4 class="tagline">Researcher</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/avatar-02.jpg" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Zijian Zhao</h3>
+            <h4 class="tagline">Research Intern</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/avatar-04.jpg" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Boxun Li</h3>
+            <h4 class="tagline">Researcher</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/avatar-03.jpg" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Tete Xiao</h3>
+            <h4 class="tagline">Research Intern</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Gang Yu</h3>
+            <h4 class="tagline">Leader of Detection team</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Xiangyu Zhang</h3>
+            <h4 class="tagline">Leader of Basemodel Team</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Member -->
+      <div class="col-md-3 col-md-push-0 col-sm-6 col-sm-push-0 col-xs-6 col-xs-push-0">
+        <div class="team-member">
+          <div class="img-wrapper">
+            <img src="/images/avatars/" alt="Avatar Team Member" />
+          </div>
+          <div class="team-member-content">
+            <h3 class="name">Jian Sun</h3>
+            <h4 class="tagline">Managing Director of Research (Chief Scientist)</h4>
+            <div class="social-icons">
+              <ul class="icons">
+                <li><a href="#" target="_blank"><i class="fi flaticon-youtube"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-pinterest"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-google-plus"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fi flaticon-vimeo"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- Site Footer -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-md-push-3 footer-info text-center">
+
+        <div class="footer-logo">
+          <img src="/images/logo.png" width="200" alt="Megvii Inc. (Face++)" />
+        </div>
+
+        <div class="footer-info-text">
+          <p>Power Human with AI.</p>
+        </div>
+
+      </div>
+
+      <div class="col-md-8 col-md-push-2 footer-copyright">
+        <div class="footer-text text-center">
+          <p>All Right Reserved!</p>
+        <p><a href="http://www.megvii.com">Megvii Inc. (Face++)</a> &copy; 2018 Copyright</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Go To Top Button -->
+<a href="#home" class="go-to-top-button"><i class="pe-7s-angle-up"></i></a>
+
+
+    <!-- Importing Scripts -->
+
+<!-- jQuery CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- If CDN fails than use local jQuery -->
+<script>window.jQuery || document.write('<script src="/js/jquery-3.0.0.min.js"><\/script>')</script>
+
+<!-- Owl Carousel -->
+<script src="/js/carousel.min.js" charset="utf-8"></script>
+
+<!-- Parallaxing & SmoothScroll -->
+<script src="/js/scrollax.min.js" charset="utf-8"></script>
+
+
+
+<!-- Main JS -->
+<script src="/js/main.js" charset="utf-8"></script>
+
+
+  </body>
+
+</html>
