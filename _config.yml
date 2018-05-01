@@ -15,7 +15,7 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md"]
 # For this example my site url is: projects.gleesik.ro (This can be just www.example.com)
 # My folder for Demo Website is: /sera-onepage so baseurl: /sera-onepage
 #
-baseurl: /CrowdHuman
+baseurl: 
 
 # the base hostname & protocol for your site
 url: "https://sshao0516.github.io/CrowdHuman/"
