@@ -103,66 +103,66 @@ features:
 ############  Portfolio  ############
 #####################################
 portfolio-title: Explore
-portfolio-description: examples
+portfolio-description: Some examples.
 
 #
 # Portfolio Grid
 #
-portfolio-categories: [Websites, Logo, Graphic Design, Development, Video, Photography]
+portfolio-categories: [Head BBox, Vis BBox, Full BBox]
 portfolio:
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Websites, Graphic Design]
-  image: img-01.jpg
+- title: example
+  categories: [Head BBox]
+  image: 1.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Graphic Design, Logo, Websites]
-  image: img-02.jpg
+- title: example
+  categories: [Vis BBox]
+  image: 2.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Graphic Design, Logo, Photography]
-  image: img-03.jpg
+- title: example
+  categories: [Full BBox]
+  image: 3.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Websites, Video, Photography]
-  image: img-04.jpg
+- title: example
+  categories: []
+  image: 4.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Development, Logo]
-  image: img-05.jpg
+- title: example
+  categories: []
+  image: 5.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Development, Video]
-  image: img-06.jpg
+- title: example
+  categories: []
+  image: 6.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Websites, Graphic Design]
-  image: img-07.jpg
+- title: example
+  categories: []
+  image: 7.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Websites , Video]
-  image: img-08.jpg
+- title: example
+  categories: []
+  image: 8.jpg
   url: '#'
 
 # Portfolio Item
-- title: S<span class="thin">era</span> Style
-  categories: [Photography, Logo]
-  image: img-09.jpg
+- title: example
+  categories: []
+  image: 9.jpg
   url: '#'
 
 
