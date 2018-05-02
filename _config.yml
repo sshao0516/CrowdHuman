@@ -198,7 +198,7 @@ team:
 # Team Member
 - name: Shuai Shao
   tagline: Researcher
-  avatar: avatar-01.jpg
+  avatar: 
 
   # Social Links
   youtube: '#'
@@ -211,7 +211,7 @@ team:
 # Team Member
 - name: Zijian Zhao
   tagline: Research Intern
-  avatar: avatar-02.jpg
+  avatar: 
 
   # Social Links
   youtube: '#'
@@ -224,7 +224,7 @@ team:
 # Team Member
 - name: Boxun Li
   tagline: Researcher
-  avatar: avatar-04.jpg
+  avatar: 
 
   # Social Links
   youtube: '#'
@@ -237,7 +237,7 @@ team:
 # Team Member
 - name: Tete Xiao
   tagline: Research Intern
-  avatar: avatar-03.jpg
+  avatar: 
 
   # Social Links
   youtube: '#'
