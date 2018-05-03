@@ -1,20 +1,271 @@
----
-layout: default
-title: CrowdHuman Dataset
----
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0519fb032e11a82226ca387ebde381e0";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
-{% include sections/overview.html %}
 
-{% include sections/features.html %}
+  <head>
 
-{% include sections/explore.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-{% include sections/challenge.html %}
+    <title>CrowdHuman Dataset</title>
 
-{% include sections/download.html %}
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-{% include sections/license.html %}
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
-{% include sections/offer.html offer-text="Face++, A new chance!" button-text="Join Us" %}
+  </head>
 
-{% include sections/team.html %}
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger col-lg-2" href="#page-top">
+            <img src="images/logo.png" width=100% alt="Megvii Inc. (Face++)" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#explore">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#challenge">Challenge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#people">People</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-white" style="background:#00A5E3">
+      <div class="container text-center" style="margin-top:0rem;">
+        <h1>CrowdHuman</h1>
+        <h2>A Benchmark for Detecting Human in a Crowd</h2>
+        <p class="lead">
+            <a href="#" class="text-white">Shuai Shao*</a>, 
+            <a href="#" class="text-white">Zijian Zhao*</a>, 
+            <a href="#" class="text-white">Boxun Li</a>, 
+            <a href="http://tetexiao.com/" class="text-white">Tete Xiao</a>, 
+            <a href="http://www.skicyyu.org/" class="text-white">Gang Yu</a>, 
+            <a href="#" class="text-white">Xiangyu Zhang</a>, 
+            <a href="http://www.jiansun.org/" class="text-white">Jian Sun</a>
+        </p>
+      </div>
+    </header>
+
+    <section id="abstract">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <p class="lead">CrowdHuman is a benchmark dataset to better evaluate detectors in crowd scenarios. The CrowdHuman dataset is large, rich-annotated and contains high diversity. CrowdHuman contains 15000, 4370 and 5000 images for training, validation, and testing, respectively. There are a total of 470K human instances from train and validation subsets and 23 persons per image, with various kinds of occlusions in the dataset. Each human instance is annotated with a head bounding-box, human visible-region bounding-box and human full-body bounding-box. We hope our dataset will serve as a solid baseline and help promote future research in human detection tasks. </p>
+            <h2>News</h2>
+            <p class="lead"><font color="red">[news]</font> Our dataset is published.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="bg-light">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+          </div>
+          <div class="col-lg-12 mx-auto text-center">
+            <img src="images/fig1.png" width=100% alt="fig1.png" />
+            <p class="lead">Volume, density and diversity of different human detection datasets. <br> For fair comparison, we only show the statistics of training subset.</p>
+          </div>
+          <div class="col-lg-12 mx-auto text-center">
+            <img src="images/fig2.png" width=100% alt="fig2.png" />
+            <p class="lead">Comparison of the visible ratio between our CrowdHuman and CityPersons dataset. <br> Visible Ratio is defined as the ratio of visible bounding box to the full bounding box.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img src="images/1.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/7.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/8.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-12 mx-auto">
+            <br>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/4.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/5.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/6.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-12 mx-auto">
+            <br>
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/7.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/2.jpg" width=100% alt="examples" />
+            </div>
+            <div class="col-lg-4 mx-auto">
+              <img src="images/9.jpg" width=100% alt="examples" />
+            </div>
+            <!-- -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge" class="bg-light">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2>Challenge</h2>
+            <p class="lead"> Coming Soon...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2>Paper</h2>
+            <a href="https://arxiv.org/abs/1805.00123"><img src="images/paper.png" width=30% alt="paper" /></a>
+          </div>
+          <div class="col-lg-6 mx-auto text-center">
+            <h2>Download</h2>
+            <a href="download.html"><img src="images/download_icon.png" width=30% alt="download" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation" class="bg-light">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <p class="lead">Please cite the following paper if you use our dataset.</p>
+<pre class="highlight" style="background-color:rgba(0, 0, 0, 0.1)">
+
+  @inproceedings{shao2018crowdhuman,
+    title={CrowdHuman: A Benchmark for Detecting Human in a Crowd},
+    author={Shao, Shuai and Zhao, Zijian and Li, Boxun and Xiao, Tete and Yu, Gang and Zhang, Xiangyu and Sun, Jian},
+    journal={arXiv preprint arXiv:1805.00123},
+    year={2018}
+  }<pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="people">
+      <div class="container" style="margin-top:-5rem;margin-bottom:-5rem;">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <img src="images/shaoshuai.jpg" width=100% alt="shaoshuai" />
+            <p class="lead">Shuai Shao</p>
+            <p>Megvii Inc.</p>
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <img src="" width=100% alt="zhaozijian" />
+            <p class="lead">Zijian Zhao</p>
+            <p>Beihang University</p>
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <img src="images/liboxun.png" width=100% alt="liboxun" />
+            <p class="lead">Boxun Li</p>
+            <p>Megvii Inc.</p>
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <a href="http://tetexiao.com/" class="text-dark">
+            <img src="images/xtt.jpg" width=100% alt="xtt" />
+            <p class="lead">Tete Xiao</p>
+            </a>
+            <p>Peking University</p>
+          </div>
+          <div class="col-lg-12 mx-auto">
+            <br>
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <a href="http://www.skicyyu.org/" class="text-dark">
+            <img src="images/yugang.jpeg" width=100% alt="yugang" />
+            <p class="lead">Gang Yu</p>
+            </a>
+            <p>Megvii Inc.</p>
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <img src="images/zhangxiangyu.jpg" width=100% alt="zhangxiangyu" />
+            <p class="lead">Xiangyu Zhang</p>
+            <p>Megvii Inc.</p>
+          </div>
+          <div class="col-lg-2 mx-auto text-center">
+            <a href="http://www.jiansun.org/" class="text-dark">
+            <img src="images/sunjian.jpg" width=100% alt="sunjian" />
+            <p class="lead">Jian Sun</p>
+            </a>
+            <p>Megvii Inc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="https://www.megvii.com">Megvii Inc.</a> 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>
