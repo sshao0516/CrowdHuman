@@ -55,8 +55,52 @@
     <section id="format" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <p>about odgt file</p>
+          <!--div class="col-lg-12 mx-auto"-->
+          <div id='preview-contents' class='note-content'>
+            <link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'>
+            <style>.note-content  {font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;}</style>
+            <p></p>
+
+            <h2 id="crowdhuman-dataset">CrowdHuman dataset</h2>
+            <p>We support <code>annotation_train.odgt</code> and <code>annotation_val.odgt</code> which contains the annotations of our dataset.</p>
+
+            <h3 id="what-is-odgt">What is odgt?</h3>
+            <p><code>odgt</code> is a file format that <strong>each line of it is a JSON</strong>, this JSON contains the whole annotations for the relative image. We prefer using this format since it is reader-friendly.</p>
+
+            <h3 id="annotation-format">Annotation format</h3>
+<pre class="prettyprint hljs-dark"><code class="language-json hljs"><div class="hljs-line">JSON{
+</div><div class="hljs-line">    <span class="hljs-attr">"ID"</span> : image_filename,
+</div><div class="hljs-line">    <span class="hljs-attr">"gtboxes"</span> : [gtbox], 
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">gtbox{
+</div><div class="hljs-line">    <span class="hljs-attr">"tag"</span> : <span class="hljs-string">"person"</span> or <span class="hljs-string">"mask"</span>, 
+</div><div class="hljs-line">    <span class="hljs-attr">"vbox"</span>: [x, y, w, h],
+</div><div class="hljs-line">    <span class="hljs-attr">"fbox"</span>: [x, y, w, h],
+</div><div class="hljs-line">    <span class="hljs-attr">"hbox"</span>: [x, y, w, h],
+</div><div class="hljs-line">    <span class="hljs-attr">"extra"</span> : extra, 
+</div><div class="hljs-line">    <span class="hljs-attr">"head_attr"</span> : head_attr, 
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">extra{
+</div><div class="hljs-line">    <span class="hljs-attr">"ignore"</span>: <span class="hljs-number">0</span> or <span class="hljs-number">1</span>,
+</div><div class="hljs-line">    <span class="hljs-attr">"box_id"</span>: int,
+</div><div class="hljs-line">    <span class="hljs-attr">"occ"</span>: int,
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><wbr>
+</div><div class="hljs-line">head_attr{
+</div><div class="hljs-line">    <span class="hljs-attr">"ignore"</span>: <span class="hljs-number">0</span> or <span class="hljs-number">1</span>,
+</div><div class="hljs-line">    <span class="hljs-attr">"unsure"</span>: int,
+</div><div class="hljs-line">    <span class="hljs-attr">"occ"</span>: int,
+</div><div class="hljs-line">}
+</div></code></pre>
+
+            <ul><li><code>Keys</code> in <code>extra</code> and <code>head_attr</code> are <strong>optional</strong>,  it means some of them may not exist</li>
+            <li><code>extra/head_attr</code> contains attributes for <code>person/head</code></li>
+            <li><code>tag</code> is <code>mask</code> means that this box is <code>crowd/reflection/something like person/...</code> and need to be <code>ignore</code>(the <code>ignore</code> in <code>extra</code> is <code>1</code>)</li>
+            <li><code>vbox, fbox, hbox</code> means <code>visible box, full box, head box</code> respectively</li>
+            </ul>
+            </div>
           </div>
         </div>
       </div>
